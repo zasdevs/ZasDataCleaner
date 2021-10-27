@@ -53,12 +53,12 @@ class ZasDataCleaner
 	 */
 	public function __construct( $folder_name, $delete_limit, $Folder_memory_limit )
 	{
-		$this->folder_name 		   = $folder_name;
+		$this->folder_name         = $folder_name;
 		$this->Folder_memory_limit = $Folder_memory_limit;
-		$this->assigned 		   = $this->tobytes();
-		$Files_In_Folder 		   = $this->file_count_in_folder();
-		$percentage 			   = str_replace( '%', '', $delete_limit );
-		$td_Limit 				   = bcdiv( $Files_In_Folder * $percentage / 100, 1, 0 );
+		$this->assigned            = $this->tobytes();
+		$Files_In_Folder 	   = $this->file_count_in_folder();
+		$percentage 		   = str_replace( '%', '', $delete_limit );
+		$td_Limit 		   = bcdiv( $Files_In_Folder * $percentage / 100, 1, 0 );
 		$this->delete_limit 	   = $td_Limit;
 	}
 	
