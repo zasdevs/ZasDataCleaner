@@ -5,7 +5,7 @@ ZasDataCleaner is a auto directory cleaner PHP class.
 ### Installation
 To utilize this class, first import ZasDataCleaner.php into your project, and require it.
 ```php
-require_once 'ZasDataCleaner.php';
+require_once 'swap/ZasDataCleaner.php';
 ```
 
 ### Initialization
@@ -62,7 +62,7 @@ $cleaner->delete_files();
 ### Example
 Call the class for folder management:
 ```php
-require_once 'ZasDataCleaner.php';
+require_once 'swap/ZasDataCleaner.php';
 
 $cleaner = new ZasDataCleaner( 'zas', '40%', '120_GB' );
 
